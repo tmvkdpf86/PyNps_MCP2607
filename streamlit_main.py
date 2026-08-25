@@ -127,7 +127,7 @@ if data and company_name:
     if len(output) > 0:
         st.subheader(output['사업장명'])
         info = data.company_info(company_name=company_name)
-                st.markdown(
+st.markdown(
             f"""
             - `{info['주소']}`
             - 업종코드명 `{info['업종코드명']}`
